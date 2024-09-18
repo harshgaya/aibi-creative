@@ -19,7 +19,10 @@
         <a href="#what-we-do">What we do</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#why-us">Why Us</a>
-        <a href="#contact-us">Contact Us</a>
+        <a
+          href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
+          >Contact Us</a
+        >
       </div>
       <div class="hemburger-menu">
         <img src="src/menu.png" alt="" />
@@ -31,7 +34,10 @@
         <a href="#what-we-do">What we do</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#why-us">Why Us</a>
-        <a href="#contact-us">Contact Us</a>
+        <a
+          href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
+          >Contact Us</a
+        >
       </div>
     </div>
     <div class="homepage">
@@ -42,11 +48,57 @@
           We are delivering top level digital services with our best experienced
           team, just get started with us.
         </h3>
-        <a href="#contact-us">
+        <!-- <a href="#contact-us">
           <button>LET'S TALK</button>
-        </a>
+        </a> -->
       </div>
-      <img src="src/homepgae_img.png" alt="" />
+      <!-- <img src="src/homepgae_img.png" alt="" /> -->
+      <div class="contact-us-form margin-top">
+        <form id="contactForm">
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Your Name*"
+            class="margin-top-less name-input"
+          />
+
+          <!-- <label for="mobile"
+            >Mobile Number <span style="color: red">*</span></label
+          > -->
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            pattern="[0-9]{10}"
+            placeholder="Mobile Number*"
+            required
+            class="margin-top-less mobile-input"
+          />
+
+          <!-- <label for="message">Message <span style="color: red">*</span></label> -->
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message*"
+            rows="4"
+            maxlength="100"
+            required
+            class="margin-top-less message-input"
+          ></textarea>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+        <div class="overlay hidden">
+          <div class="modal hidden">
+            <div class="modal-content">
+              <!-- Your modal content goes here -->
+              <h3>Thanks for submitting. We will contact you soon.😊</h3>
+              <button class="close-modal">Ok</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="count-project">
       <div class="count-project-item">
@@ -69,6 +121,15 @@
         With Our Best Service
       </h1>
       <div class="what-we-do-items margin-top">
+        <div class="what-we-do-item">
+          <img src="src/influencer.png" alt="" />
+          <br />
+          <h5 class="subheading-for-h5 line-height">
+            influencer<br />Marketing
+          </h5>
+          <br />
+          <p class="subheading-for-p line-height">30+ Projects</p>
+        </div>
         <div class="what-we-do-item">
           <img src="src/icon-computer.png" alt="" />
           <br />
@@ -171,57 +232,81 @@
       <div></div>
       <div></div>
     </section>
-    <section id="contact-us">
+    <!-- <section id="contact-us">
       <h1 class="heading-big">Want To Grow <br />Your Business</h1>
       <h3 class="heading-h3">
         We work with Brands, Startup, to SMEs. Colaborate for impact are <br />
         growth. Join us today and let us help to grow your business.
       </h3>
-      <div class="contact-us-form margin-top">
-        <form id="contactForm">
-          <!-- <label for="name">Name <span style="color: red">*</span></label> -->
-          <input
-            type="text"
-            id="name"
-            required
-            placeholder="Your Name*"
-            class="margin-top-less name-input"
-          />
-
-          <!-- <label for="mobile"
-            >Mobile Number <span style="color: red">*</span></label
-          > -->
-          <input
-            type="tel"
-            id="mobile"
-            name="mobile"
-            pattern="[0-9]{10}"
-            placeholder="Mobile Number*"
-            required
-            class="margin-top-less mobile-input"
-          />
-
-          <!-- <label for="message">Message <span style="color: red">*</span></label> -->
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message*"
-            rows="4"
-            maxlength="100"
-            required
-            class="margin-top-less message-input"
-          ></textarea>
-
-          <button type="submit" class="submit-button">Submit</button>
-        </form>
-        <div class="overlay hidden">
-          <div class="modal hidden">
-            <div class="modal-content">
-              <!-- Your modal content goes here -->
-              <h3>Thanks for submitting. We will contact you soon.😊</h3>
-              <button class="close-modal">Ok</button>
+    </section> -->
+    <h1 class="heading-big-2">Want To Grow <br />Your Business</h1>
+    <!-- <h3 class="heading-h3">
+      We work with Brands, Startup, to SMEs. Colaborate for impact are <br />
+      growth. Join us today and let us help to grow your business.
+    </h3> -->
+    <section id="testimonial">
+      <!-- <h3 class="heading-h3">Testimonials</h3> -->
+      <div class="testimonial-box-3">
+        <div class="testimonial-box-1">
+          <img src="src/quote.png" alt="" />
+          <p class="portfolio-paragraph margin-top">
+            At Softplix, we create innovative and reliable software tailored to
+            business needs. As a small team, we focus on delivering quality
+            solutions that drive growth and streamline operations. Our goal is
+            to help clients succeed in the digital world through scalable,
+            user-friendly technology.
+          </p>
+          <a
+            href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
+          >
+            <div class="testimonial-box-2">
+              <img class="about-me-img-1" src="src/harsh.png" alt="" />
+              <h5>Harsh K</h5>
+              <p class="portfolio-paragraph">Software Engineer, NIT Rourkela</p>
             </div>
-          </div>
+          </a>
+        </div>
+
+        <div class="testimonial-box-1">
+          <img src="src/quote.png" alt="" />
+          <p class="portfolio-paragraph margin-top">
+            At Softplix, we strive to craft software that simplifies and
+            elevates business operations. Our mission is to design intuitive,
+            reliable solutions that adapt to the unique needs of each client. By
+            focusing on innovation and seamless functionality, we help
+            businesses grow and achieve their goals in a rapidly changing
+            digital world.
+          </p>
+          <a
+            href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
+          >
+            <div class="testimonial-box-2">
+              <img class="about-me-img-1" src="src/ravikant.png" alt="" />
+              <h5>Ravikant R</h5>
+              <p class="portfolio-paragraph">Software Engineer</p>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-box-1">
+          <img src="src/quote.png" alt="" />
+          <p class="portfolio-paragraph margin-top">
+            Softplix is India’s leading influencer marketing and talent
+            management agency, dedicated to connecting influencers and brands
+            through innovation and excellence. We specialize in helping brands
+            discover the perfect influencers, plan impactful campaigns, and
+            create engaging content. Our mission is to bridge the gap between
+            brands and their audiences, delivering exceptional results through
+            strategic and creative solutions.
+          </p>
+          <a
+            href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
+          >
+            <div class="testimonial-box-2">
+              <img class="about-me-img-1" src="src/sumit.png" alt="" />
+              <h5>Sumit G</h5>
+              <p class="portfolio-paragraph">Data Scientist, NIT Rourkela</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -230,6 +315,9 @@
         <h1 class="heading-white margin-top">SoftPlix</h1>
         <p class="subheading-for-p line-height margin-top-less">
           &copy; 2024 All rights reserved.
+        </p>
+        <p class="subheading-for-p line-height margin-top-less">
+          Contact: +91 9304136129
         </p>
         <div class="footer-icons margin-top">
           <img src="src/linkedin.png" alt="" />

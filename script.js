@@ -8,6 +8,8 @@ const menuOpen = document.querySelector(".hemburger-menu");
 const menuClose = document.querySelector(".close-button");
 const backdropMenus = document.querySelector(".backdrop-for-menu ");
 const mobileMenus = document.querySelector(".mobile-menus");
+var spinnerContainer = document.querySelector(".spinner-container");
+var spinner = spinnerContainer.querySelector(".spinner");
 
 buttonSubmit.addEventListener("click", async function (e) {
   e.preventDefault();
@@ -36,7 +38,8 @@ buttonSubmit.addEventListener("click", async function (e) {
   };
 
   try {
-    // Send the data via a POST request
+    spinner.style.display = "inline-block";
+    buttonSubmit.style.display = "none";
     const response = await fetch(
       "https://mycompanyapi-evfzc4hegyezfcdp.southindia-01.azurewebsites.net/api/admin/addUserMessage",
       {
@@ -47,6 +50,8 @@ buttonSubmit.addEventListener("click", async function (e) {
         body: JSON.stringify(data),
       }
     );
+    spinner.style.display = "none";
+    buttonSubmit.style.display = "inline-block";
 
     if (response.ok) {
       // Clear the form fields if the submission is successful
@@ -92,66 +97,3 @@ backdropMenus.addEventListener("click", function () {
     backdropMenus.classList.add("close-mobile-menu");
   }
 });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const form = document.getElementById("contactForm");
-//   const modal = document.querySelector(".modal");
-//   const overlay = document.querySelector(".overlay");
-//   const closeModalButton = document.querySelector(".close-modal");
-
-//   form.addEventListener("submit", async (event) => {
-//     console.log("button submit", fired);
-//     event.preventDefault();
-
-//     // Get the form data
-//     const name = document.getElementById("name").value.trim();
-//     const mobile = document.getElementById("mobile").value.trim();
-//     const message = document.getElementById("message").value.trim();
-
-//     // Validate mobile number length
-//     if (mobile.length !== 10 || isNaN(mobile)) {
-//       alert("Please enter a valid 10-digit mobile number.");
-//       return;
-//     }
-
-//     // Create the data object to be sent
-//     const data = {
-//       name: name,
-//       mobile: mobile,
-//       message: message,
-//     };
-
-//     try {
-//       const response = await fetch(
-//         "http://0.0.0.0:9000/api/admin/addUserMessage",
-//         {
-//           method: "POST",
-//           headers: {
-//             "Content-Type": "application/json",
-//           },
-//           body: JSON.stringify(data),
-//         }
-//       );
-//       console.log("", response);
-
-//       if (response.ok) {
-//         form.reset();
-
-//         overlay.classList.remove("hidden");
-//         modal.classList.remove("hidden");
-//         console.log("");
-//       } else {
-//         alert("Failed to submit the form. Please try again later.");
-//       }
-//     } catch (error) {
-//       console.error("Error:", error);
-//       alert("An error occurred. Please try again later.");
-//     }
-//   });
-
-//   closeModalButton.addEventListener("click", () => {
-//     overlay.classList.add("hidden");
-//     modal.classList.add("hidden");
-//   });
-// });
-//cl

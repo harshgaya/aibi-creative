@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WFH96MTK');</script>
+  <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -10,12 +17,21 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.0/dist/tailwind.min.css" rel="stylesheet">
+
     <title>SoftPlix</title>
+    <meta name="description" content="At SoftPlix.com, we blend technology and creativity to deliver top-tier solutions in Influencer Marketing, App Development,Web Development and AI-driven applications. Partner with us to transform your digital future!">
+   
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFH96MTK"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
     <nav class="nav-main">
       <h1 class="heading-white">SoftPlix</h1>
       <div class="nav-other-items">
+        <a href="projects/projects.html" target="_blank">Our Projects</a>
         <a href="#what-we-do">What we do</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#why-us">Why Us</a>
@@ -31,6 +47,7 @@
     <div class="backdrop-for-menu close-mobile-menu">
       <div class="mobile-menus">
         <img class="close-button" src="src/close copy.png" alt="" />
+        <a href="projects/projects.html" target="_blank">Our Projects</a>
         <a href="#what-we-do">What we do</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#why-us">Why Us</a>
@@ -87,8 +104,13 @@
             class="margin-top-less message-input"
           ></textarea>
 
-          <button type="submit" class="submit-button">Submit</button>
-        </form>
+          <button type="submit" class="submit-button" id="submitButton">
+            <span class="button-text">Submit</span>
+           
+        </button>
+        <div class="spinner-container">
+          <div class="spinner"></div>
+      </div>
         <div class="overlay hidden">
           <div class="modal hidden">
             <div class="modal-content">
@@ -114,6 +136,73 @@
         <p class="subheading-for-p">Happy Clients</p>
       </div>
     </div>
+    <section id="whyus">
+      <h1 class="heading-white margin-top">
+        Why Us?
+      </h1>
+      <table border="1" cellspacing="0" cellpadding="10">
+        <thead>
+          <tr>
+            <th>Services/Features</th>
+            <th>SoftPlix</th>
+            <th>Other Company</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Life Time Free Web Hosting</td>
+            <td>₹0/month</td>
+            <td>₹350-800/month</td>
+
+        </tr>
+        <tr>
+          <td>Post-Project Free Support</td>
+          <td>₹0/month</td>
+          <td>₹5000-20000/month</td>
+        </tr>
+        <tr>
+          <td>Startup Advisory with IIT/IIM Alumni</td>
+          <td>₹0 for every meeting</td>
+          <td>₹1000-5000/per month</td>
+        </tr>
+        <tr>
+          <td>Affordable Pricing for Early-Stage Startups</td>
+          <td>Free server, free hosting</td>
+          <td>₹1000-5000/month </td>
+        </tr>
+        <tr>
+          <td>Top-Tier Teams from IIT/NIT/IIM Alumni</td>
+          <td>Free Consultation</td>
+          <td>₹1000-5000/consultation </td>
+        </tr>
+        <tr>
+          <td>Free Communication with Startup Researchers</td>
+          <td>Free Consultation</td>
+          <td>₹1000-5000/consultation </td>
+        </tr>
+        <tr>
+          <td>24/7 Technical Support</td>
+          <td>&#10003;</td>
+          <td>&#10003;</td>
+        </tr>
+        <tr>
+          <td>Free Digital Marketing by Top Marketers</td>
+          <td>₹0/month</td>
+          <td>₹1000-5000/ad post </td>
+        </tr>
+        <tr>
+          <td>On-Site Technical Consulting</td>
+          <td>₹0/month</td>
+          <td>No Consulting </td>
+        </tr>
+        <tr>
+          <td>Rapid API Development</td>
+          <td>&#10003;</td>
+          <td>&#10003;</td>
+        </tr>
+      </tbody>
+      </table>
+    </section>
     <section id="what-we-do">
       <h5 class="heading-yellow">A TRUSTED DIGITAL AGENCY</h5>
       <h1 class="heading-white margin-top">
@@ -130,21 +219,33 @@
           <br />
           <p class="subheading-for-p line-height">30+ Projects</p>
         </div>
-        <div class="what-we-do-item">
-          <img src="src/icon-computer.png" alt="" />
-          <br />
-          <h5 class="subheading-for-h5 line-height">Website<br />Design</h5>
-          <br />
-          <p class="subheading-for-p line-height">120+ Projects</p>
+          <div class="what-we-do-item">
+            <a  href="projects/projects.html" target="_blank">
+              <img src="src/icon-computer.png" alt="" />
+              <br />
+              <h5 class="subheading-for-h5 line-height" style="margin-top: 5px;">Website<br />Design</h5>
+              <br />
+            
+              <p class="subheading-for-p line-height">120+ Projects</p>
+            
+              <p class="subheading-for-p line-height" style="margin-top: 5px;">see Project ➔</p>
+            </a>
+          
         </div>
+       
         <div class="what-we-do-item">
-          <img src="src/mobile.png" alt="" />
-          <br />
-          <h5 class="subheading-for-h5 line-height">
-            Mobile App<br />Development
-          </h5>
-          <br />
-          <p class="subheading-for-p line-height">36+ Projects</p>
+          <a href="projects/projects.html" target="_blank">
+            <img src="src/mobile.png" alt="" />
+            <br />
+            <h5 class="subheading-for-h5 line-height">
+              Mobile App<br />Development
+            </h5>
+            <br />
+            <p class="subheading-for-p line-height">36+ Projects</p>
+            <p class="subheading-for-p line-height" style="margin-top: 5px;">see Project ➔</p>
+
+          </a>
+         
         </div>
         <div class="what-we-do-item">
           <img src="src/laptop.png" alt="" />
@@ -250,6 +351,22 @@
         <div class="testimonial-box-1">
           <img src="src/quote.png" alt="" />
           <p class="portfolio-paragraph margin-top">
+            
+            At Softplix, we craft reliable and innovative software designed to meet business needs. With a small, focused team, we prioritize delivering quality solutions that boost growth and improve operations. Our mission is to support clients in succeeding digitally by offering scalable, user-friendly technology tailored to their goals.          </p>
+          <a
+            href="https://wa.me/917995914765?text=I%20want%20to%20talk%20regarding%20Softplix"
+          >
+            <div class="testimonial-box-2">
+              <img class="about-me-img-1" src="src/akash.png" alt="" />
+              <h5>Akash</h5>
+              <p class="portfolio-paragraph">Ex Engineer, L&T Valves</p>
+              <p class="portfolio-paragraph">Expert in Project Management</p>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-box-1">
+          <img src="src/quote.png" alt="" />
+          <p class="portfolio-paragraph margin-top">
             At Softplix, we create innovative and reliable software tailored to
             business needs. As a small team, we focus on delivering quality
             solutions that drive growth and streamline operations. Our goal is
@@ -261,8 +378,9 @@
           >
             <div class="testimonial-box-2">
               <img class="about-me-img-1" src="src/harsh.png" alt="" />
-              <h5>Harsh K</h5>
+              <h5>Harsh</h5>
               <p class="portfolio-paragraph">Software Engineer, NIT Rourkela</p>
+              <p class="portfolio-paragraph">Expert in Flutter,Node JS,React JS,SQL,AWS,MongoDb</p>
             </div>
           </a>
         </div>
@@ -278,11 +396,11 @@
             digital world.
           </p>
           <a
-            href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
+            href="https://wa.me/916206980127?text=I%20want%20to%20talk%20regarding%20Softplix"
           >
             <div class="testimonial-box-2">
               <img class="about-me-img-1" src="src/ravikant.png" alt="" />
-              <h5>Ravikant R</h5>
+              <h5>Ravikant</h5>
               <p class="portfolio-paragraph">Software Engineer</p>
             </div>
           </a>
@@ -294,16 +412,14 @@
             management agency, dedicated to connecting influencers and brands
             through innovation and excellence. We specialize in helping brands
             discover the perfect influencers, plan impactful campaigns, and
-            create engaging content. Our mission is to bridge the gap between
-            brands and their audiences, delivering exceptional results through
-            strategic and creative solutions.
+            create engaging content.
           </p>
           <a
             href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"
           >
             <div class="testimonial-box-2">
               <img class="about-me-img-1" src="src/sumit.png" alt="" />
-              <h5>Sumit G</h5>
+              <h5>Sumit</h5>
               <p class="portfolio-paragraph">Data Scientist, NIT Rourkela</p>
             </div>
           </a>
@@ -316,14 +432,20 @@
         <p class="subheading-for-p line-height margin-top-less">
           &copy; 2024 All rights reserved.
         </p>
-        <p class="subheading-for-p line-height margin-top-less">
+        <a href="tel:+919304136129"> <p class="subheading-for-p line-height margin-top-less">
           Contact: +91 9304136129
-        </p>
+        </p></a>
+       
         <div class="footer-icons margin-top">
-          <img src="src/linkedin.png" alt="" />
-          <img src="src/twitter.png" alt="" />
-          <img src="src/instagram.png" alt="" />
-          <img src="src/fb.png" alt="" />
+          <a href="https://www.linkedin.com/company/softplix-software/">
+            <img src="src/linkedin.png" alt="softplix linkedin" />
+          </a>
+          
+         <a href="https://wa.me/919304136129?text=I%20want%20to%20talk%20regarding%20Softplix"><img src="src/whatsapp.png" alt="" /></a>
+         <a href="https://www.instagram.com/softplix_software"> <img src="src/instagram.png" alt="" /></a>
+          
+         <a href="https://www.instagram.com/softplix_software"> <img src="src/fb.png" alt="" /></a>
+         
         </div>
       </div>
       <div class="footer-item-3">
